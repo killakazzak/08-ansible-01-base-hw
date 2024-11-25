@@ -6,6 +6,16 @@
 2. Создайте свой публичный репозиторий на GitHub с произвольным именем.
 3. Скачайте [Playbook](./playbook/) из репозитория с домашним заданием и перенесите его в свой репозиторий.
 
+```bash
+ansible --version
+![image](https://github.com/user-attachments/assets/2dd4afd9-c066-4287-a345-d5199a9c19e9)
+```
+```bash
+git remote -v
+```
+![image](https://github.com/user-attachments/assets/2211f062-8481-4b28-b569-ea7fb5e42ba7)
+
+
 ## Основная часть
 
 1. Попробуйте запустить playbook на окружении из `test.yml`, зафиксируйте значение, которое имеет факт `some_fact` для указанного хоста при выполнении playbook.
