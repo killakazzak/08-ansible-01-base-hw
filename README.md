@@ -8,8 +8,9 @@
 
 ```bash
 ansible --version
-![image](https://github.com/user-attachments/assets/2dd4afd9-c066-4287-a345-d5199a9c19e9)
 ```
+
+![image](https://github.com/user-attachments/assets/2dd4afd9-c066-4287-a345-d5199a9c19e9)
 ```bash
 git remote -v
 ```
