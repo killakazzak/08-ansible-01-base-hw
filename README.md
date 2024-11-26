@@ -57,8 +57,8 @@ ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml
 7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
 
 ```bash
-ansible-vault encrypt /root/playbook/group_vars/deb/example.yml --vault-password-file <(echo netology)
-ansible-vault encrypt /root/playbook/group_vars/el/example.yml --vault-password-file <(echo netology)
+ansible-vault encrypt playbook/group_vars/deb/example.yml --vault-password-file <(echo netology)
+ansible-vault encrypt playbook/group_vars/el/example.yml --vault-password-file <(echo netology)
 ```
 
 8. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
