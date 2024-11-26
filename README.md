@@ -60,6 +60,7 @@ ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml
 ansible-vault encrypt /root/08-ansible-01-base-hw/playbook/group_vars/deb/examp.yml --vault-password-file <(echo netology)
 ansible-vault encrypt /root/08-ansible-01-base-hw/playbook/group_vars/el/examp.yml --vault-password-file <(echo netology)
 ```
+![image](https://github.com/user-attachments/assets/23f161da-f38a-4216-ba33-5151302c9d7f)
 
 8. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
 9. Посмотрите при помощи `ansible-doc` список плагинов для подключения. Выберите подходящий для работы на `control node`.
