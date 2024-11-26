@@ -71,6 +71,10 @@ ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml  --ask-vault-p
 
 9. Посмотрите при помощи `ansible-doc` список плагинов для подключения. Выберите подходящий для работы на `control node`.
 
+```bash
+ansible-doc -t connection local
+```
+![image](https://github.com/user-attachments/assets/0a6243bf-eec5-435e-a8b2-e1b832600393)
 
 10. В `prod.yml` добавьте новую группу хостов с именем  `local`, в ней разместите localhost с необходимым типом подключения.
 11. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
