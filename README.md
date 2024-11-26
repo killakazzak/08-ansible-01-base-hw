@@ -55,6 +55,12 @@ ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml
 ![image](https://github.com/user-attachments/assets/4af7c571-0b2b-4462-8dad-f5def4ff1253)
 
 7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
+
+```bash
+ansible-vault encrypt playbook/group_vars/deb.yml --vault-password-file <(echo netology)
+ansible-vault encrypt playbook/group_vars/el.yml --vault-password-file <(echo netology)
+```
+
 8. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
 9. Посмотрите при помощи `ansible-doc` список плагинов для подключения. Выберите подходящий для работы на `control node`.
 10. В `prod.yml` добавьте новую группу хостов с именем  `local`, в ней разместите localhost с необходимым типом подключения.
