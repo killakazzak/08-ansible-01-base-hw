@@ -3,6 +3,8 @@ el:
   hosts:
     centos8:
       ansible_connection: docker
+    fedora:
+      ansible_connection: docker
 deb:
   hosts:
     ubuntu:
