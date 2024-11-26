@@ -43,6 +43,7 @@ docker run -d --name centos7 centos:7 tail -f /dev/null
 ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml
 ```
 
+![image](https://github.com/user-attachments/assets/e58ce12b-d9e9-43f4-9e96-5d99977c145d)
 
 
 
