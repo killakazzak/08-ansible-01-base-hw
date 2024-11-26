@@ -50,10 +50,9 @@ ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml
 ![image](https://github.com/user-attachments/assets/e58ce12b-d9e9-43f4-9e96-5d99977c145d)
 
 5. Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
+6. Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
 
 ![image](https://github.com/user-attachments/assets/4af7c571-0b2b-4462-8dad-f5def4ff1253)
-
-6. Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
 
 7. При помощи `ansible-vault` зашифруйте факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
 8. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь в работоспособности.
