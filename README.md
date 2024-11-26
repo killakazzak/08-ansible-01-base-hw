@@ -34,6 +34,19 @@ git remote -v
 ![image](https://github.com/user-attachments/assets/17cee244-0863-42e0-a170-c219c2a0f41a)
 
 3. Воспользуйтесь подготовленным (используется `docker`) или создайте собственное окружение для проведения дальнейших испытаний.
+
+```bash
+docker run -d --name ubuntu ubuntu tail -f /dev/null
+docker run -d --name centos7 centos:7 tail -f /dev/null
+```
+```bash
+ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml
+```
+
+
+
+
+
 4. Проведите запуск playbook на окружении из `prod.yml`. Зафиксируйте полученные значения `some_fact` для каждого из `managed host`.
 5. Добавьте факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
 6. Повторите запуск playbook на окружении `prod.yml`. Убедитесь, что выдаются корректные значения для всех хостов.
