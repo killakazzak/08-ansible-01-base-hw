@@ -77,6 +77,9 @@ ansible-doc -t connection local
 ![image](https://github.com/user-attachments/assets/0a6243bf-eec5-435e-a8b2-e1b832600393)
 
 10. В `prod.yml` добавьте новую группу хостов с именем  `local`, в ней разместите localhost с необходимым типом подключения.
+
+![image](https://github.com/user-attachments/assets/fa91386d-0dd5-4331-b3ff-ec0bfb18ca73)
+
 11. Запустите playbook на окружении `prod.yml`. При запуске `ansible` должен запросить у вас пароль. Убедитесь, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
 12. Заполните `README.md` ответами на вопросы. Сделайте `git push` в ветку `master`. В ответе отправьте ссылку на ваш открытый репозиторий с изменённым `playbook` и заполненным `README.md`.
 13. Предоставьте скриншоты результатов запуска команд.
