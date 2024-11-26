@@ -37,8 +37,9 @@ git remote -v
 
 ```bash
 docker run -d --name ubuntu ubuntu tail -f /dev/null
-docker run -d --name centos7 centos:7 tail -f /dev/null
+docker run -d --name centos8 centos:8 tail -f /dev/null
 ```
+
 ```bash
 ansible-playbook -i playbook/inventory/prod.yml playbook/site.yml
 ```
